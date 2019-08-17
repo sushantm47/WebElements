@@ -1,0 +1,105 @@
+body{
+    background-color:#322F2F;
+    color: white;
+	font-family: 'Signika', sans-serif;
+    
+}
+
+.team{
+    margin:50px 0;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding-bottom:4px; 
+}
+
+h1:after{
+    content:'';
+    background: #fff;
+    display:block;
+    height: 3px;
+    width: 150px;
+    margin:10px auto;
+}
+
+.profile{
+    margin-top:25px;
+}
+
+.profile .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile h2{
+    font-size:22px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.profile h3{
+    font-size:15px;
+    margin-top:10px;
+}
+
+.img-box:after{
+    content:'';
+    opacity:0;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+}
+
+.img-box ul{
+    margin: 0;
+    padding:20px 0;
+    position: absolute;
+    z-index:1;
+    bottom:0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity:0;
+}
+
+.img-box ul li{
+    width:30px;
+    height: 30px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    margin:5px;
+    padding:2px;
+    display: inline-block;
+}
+
+.img-box a{
+    color:rgb(235, 226, 226);
+}
+
+.img-box:hover:after{
+    opacity:1;
+}
+
+.img-box:hover ul{
+    opacity: 1;
+}
+
+.img-box a:hover li{
+     color: #007bff;
+}
+
+.img-box ul li, .img-box ul,.img-box:after{
+    transition:all 0.5s ease-in;
+}
+
+#red-background{
+    background-color:#a80523;
+    padding: 3px 2px 3px 10px;
+}
